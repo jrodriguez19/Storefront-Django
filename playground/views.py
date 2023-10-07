@@ -17,4 +17,4 @@ class HelloView(APIView):
             data = response.json()
         except requests.ConnectionError:
             logger.critical('httpbin is offline')
-        return render(request, 'hello.html', {'name': 'George'})
+        return render(request, 'hello.html', {'name': 'Mosh'})
